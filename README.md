@@ -1,42 +1,23 @@
-# NCMusic
+# NCMusic - 网易云音乐 Vue3 前端项目
+基于 Vue3 + Vite + PNPM 搭建的网易云音乐前端仿站项目。
 
-This template should help get you started developing with Vue 3 in Vite.
+## 📋 项目介绍
+实现了网易云音乐的基础前端界面布局，包含推荐歌单、推荐新音乐、歌手榜单等核心页面。
 
-## Recommended IDE Setup
+## 🛠️ 技术栈
+- 前端框架：Vue 3
+- 构建工具：Vite
+- 包管理器：PNPM
+- 网络请求：Axios
+- 样式：CSS/Scss
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+## 🚀 快速开始
+```bash
+# 安装依赖
 pnpm install
-```
 
-### Compile and Hot-Reload for Development
+# 启动开发服务
+pnpm run dev
 
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
+# 构建生产版本
+pnpm run build
