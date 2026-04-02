@@ -1,6 +1,7 @@
 <script setup>
-import { ref,computed,onMounted,watch } from "vue"
+import { ref,computed,watch } from "vue"
 import { useRoute } from "vue-router"
+import { debounce } from 'lodash-es'
 import api from "@/api"
 import router from "@/router"
 
@@ -53,16 +54,19 @@ const handlePlay = (id) =>{
     })
 }
 
+//增加一个防抖防止消耗性能
+const fetchSearchResultDebounced = debounce(fetchSearchResult, 300)
+
 watch(
     () => keyword.value,
     () =>{
-        fetchSearchResult()
-    }
+        fetchSearchResultDebounced()
+    },
+    { immediate: true }
 )
 
-onMounted(() =>{
-    fetchSearchResult()
-})
+
+
 
 
 </script>
