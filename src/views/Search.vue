@@ -65,6 +65,10 @@ watch(
     { immediate: true }
 )
 
+onUnmounted(() => {
+  // 组件销毁时，取消防抖定时器
+  fetchSearchResultDebounced.cancel()
+})
 
 
 
