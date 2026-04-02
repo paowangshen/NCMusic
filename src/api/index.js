@@ -1,7 +1,7 @@
 import axios from "axios"
 
 // 配置后端地址
-const BASE_URL = "http://localhost:3000"
+const BASE_URL = "https://info-music-backend-200909-paowangshen-s-projects.vercel.app"
 
 // 创建实例对象
 const instance = axios.create({
