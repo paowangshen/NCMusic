@@ -10,7 +10,7 @@ const BASE_URL = isDev
 // 创建实例对象
 const instance = axios.create({
     baseURL:BASE_URL,
-    timeout:10000,
+    timeout:30000,
     withCredentials:true
 })
 
