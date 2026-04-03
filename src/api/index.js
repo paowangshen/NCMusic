@@ -6,11 +6,11 @@ const BASE_URL = isDev
   ? 'http://localhost:3000'
   : 'https://nc-music-backend-dgh3.vercel.app'
 
-  
+
 // 创建实例对象
 const instance = axios.create({
     baseURL:BASE_URL,
-    timeout:30000,
+    timeout:10000,
     withCredentials:true
 })
 
