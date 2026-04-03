@@ -6,8 +6,7 @@ const BASE_URL = isDev
   ? 'http://localhost:3000'
   : 'https://nc-music-backend-dgh3.vercel.app'
 
-
-
+  
 // 创建实例对象
 const instance = axios.create({
     baseURL:BASE_URL,
@@ -18,11 +17,7 @@ const instance = axios.create({
 // 请求拦截器：可以统一添加 token 
 instance.interceptors.request.use(
     (config) =>{
-        // 添加 token
-        // const token = localStorage.getItem("token")
-        // if(token){
-        //     config.headers.Authorization = `Bearer ${token}`
-        // }
+        
         return config
     },
     (error) => Promise.reject(error)
