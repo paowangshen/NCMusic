@@ -1,12 +1,17 @@
 import axios from "axios"
 
-// 配置后端地址
-const BASE_URL = "https://info-music-backend-200909-paowangshen-s-projects.vercel.app"
+const isDev = import.meta.env.DEV // 自动识别是否为本地开发
+
+const BASE_URL = isDev
+  ? 'http://localhost:3000'
+  : 'https://nc-music-backend-dgh3.vercel.app'
+
+
 
 // 创建实例对象
 const instance = axios.create({
     baseURL:BASE_URL,
-    timeout:10000,
+    timeout:30000,
     withCredentials:true
 })
 

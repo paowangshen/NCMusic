@@ -115,7 +115,7 @@ const handleTogglePlay = () =>{
     if (!audio || !audioUrl.value) return
     if(audio.paused){
         audio.play().then(() =>{
-            isPlaying.value = true
+            isPlaying.value = false
         }).catch(() =>{})
     }else{
         audio.pause()
